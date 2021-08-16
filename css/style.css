@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear:before {
+    display: table;
+    content: "";
+}
+
+.clear:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.bg {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.header {
+    background-color: #fff;
+}
+
+
+/* logo */
+
+.logo {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.logo img {
+    max-width: 130px;
+    vertical-align: text-bottom;
+}
+
+
+/* navigation */
+
+.btn-togglemenu {
+    display: none;
+    border: 2px solid #de5d94;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 3px;
+    padding: 8px;
+    color: #de5d94;
+    z-index: 3;
+}
+
+.navigation {
+    padding: 0 10px;
+}
+
+.megamenu {
+    float: right;
+}
+
+.megamenu>li {
+    display: inline-block;
+    height: 60px;
+}
+
+.item>a {
+    padding: 10px 20px;
+    display: block;
+    height: 100%;
+    line-height: 36px;
+    color: #333;
+    font-weight: 400;
+}
+
+.item>a .arrow {
+    transform: rotate(270deg);
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.item>a:hover {
+    background-color: #f80463;
+    color: #fff;
+}
+
+.item>a:hover+.block,
+.item .block:hover {
+    display: block;
+}
+
+
+/* block submenu content */
+
+.block {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 20px 10px;
+    box-shadow: 1px 0 10px rgb(131, 131, 131);
+}
+
+.block .sub-menu {
+    float: left;
+    width: 15%;
+}
+
+.block .sub-menu-content {
+    float: right;
+    width: 85%;
+}
+
+.sub-menu li {
+    display: block;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.sub-menu li a {
+    font-weight: 600;
+    color: #333;
+}
+
+.sub-menu li a:hover {
+    color: #f80463;
+}
+
+.sub-menu-content .notice {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+
+.notice img {
+    max-width: 100%;
+    height: auto;
+}
+
+.notice-detail h4 {
+    padding: 10px 0;
+    font-weight: 800;
+}
+
+.notice-detail p {
+    font-size: .95em;
+}
+
+
+/* text intro page */
+
+.intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 140%;
+}
+
+.intro * {
+    color: #fff;
+    font-weight: 800;
+}
